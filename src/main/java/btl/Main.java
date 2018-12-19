@@ -8,69 +8,34 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
-    public static ArrayList<String> persons;
-
-    static {
-        try {
-            persons = FileHelper.getList("person");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-//    public static ArrayList<String> countries;
-//
-//    static {
-//        try {
-//            countries = FileHelper.getList("country");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public static ArrayList<String> orgs;
-//
-//    static {
-//        try {
-//            orgs = FileHelper.getList("orgs");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public static ArrayList<String> relationships;
-//
-//    static {
-//        try {
-//            relationships = FileHelper.getList("person");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public static ArrayList<String> events;
-//
-//    static {
-//        try {
-//            events = FileHelper.getList("person");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public static ArrayList<String> locations;
-//
-//    static {
-//        try {
-//            locations = FileHelper.getList("person");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
+    public static ArrayList<String> personLabels;
+    public static ArrayList<String> countryLabels;
+    public static ArrayList<String> orgLabels;
+    public static ArrayList<String> relationships;
+    public static ArrayList<String> eventLabels;
+    public static ArrayList<String> locations;
+    public static ArrayList<String> personDes;
+    public static ArrayList<String> countryDes;
+    public static ArrayList<String> orgDes;
+    public static ArrayList<String> eventDes;
+    public static ArrayList<String> locationDes;
 
     public static ArrayList<Entity> entities = new ArrayList<>();
 
-    public Main() {
+    public Main() throws IOException {
+
+        personLabels = FileHelper.getList("person");
+        locations = FileHelper.getList("person");
+        eventLabels = FileHelper.getList("event");
+        relationships = FileHelper.getList("relationship");
+        orgLabels = FileHelper.getList("org");
+        countryLabels = FileHelper.getList("country");
+        personDes = FileHelper.getList("description_person");
+        countryDes = FileHelper.getList("description_country");
+        eventDes = FileHelper.getList("description_event");
+        locationDes = FileHelper.getList("description_location");
+        orgDes= FileHelper.getList("description_org");
+
         entities.addAll(new GeneratePerson().getListRandom());
 //        entities.addAll(new GeneratePerson().getListRandom());
 //        entities.addAll(new GeneratePerson().getListRandom());

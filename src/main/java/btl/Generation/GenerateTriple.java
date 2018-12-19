@@ -3,8 +3,10 @@ package btl.Generation;
 import btl.Entity.Entity;
 import btl.Main;
 
-public class GenerateTriple extends Random {
-    @Override
+import java.io.IOException;
+
+public class GenerateTriple  {
+
     public String generator() {
         int x1 = new java.util.Random().nextInt(25);
         int x2 = new java.util.Random().nextInt(25);
@@ -13,7 +15,7 @@ public class GenerateTriple extends Random {
         return e1.getLabel() + " " + e1.getRilationship(e2) + " " + e2.getLabel();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new Main();
         System.out.println(new GenerateTriple().generator());
     }

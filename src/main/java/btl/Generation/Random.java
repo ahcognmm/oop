@@ -1,4 +1,4 @@
-package btl.Generate;
+package btl.Generation;
 
 public abstract class Random {
 

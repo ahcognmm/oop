@@ -1,6 +1,4 @@
-package btl.Generate;
-
-import btl.Entity.Person;
+package btl.Generation;
 
 public class GeneratePerson extends Random {
 

@@ -4,6 +4,9 @@ public class Person extends Entity {
 
     @Override
     public String getRilationship(Object o) {
+        if (o instanceof Person) {
+            return "đến thăm";
+        }
         if (o instanceof Organization) {
             return "###";
         }

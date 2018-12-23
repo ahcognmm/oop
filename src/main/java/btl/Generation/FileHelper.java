@@ -10,6 +10,7 @@ public class FileHelper {
     private static String pathOrg = "organizationLabel.txt";
     private static String pathEvent = "eventLabel.txt";
     private static String pathRelationship = "relationshipDescription.txt";
+    private static String pathLocation ="locationLabel.txt";
     private static String pathUrl = "";
     private static String pathDescription_person = "personDescription.txt";
     private static String pathDescription_country = "countryDescription.txt";
@@ -22,6 +23,9 @@ public class FileHelper {
     public static ArrayList<String> getList(String entity) throws IOException {
         ArrayList<String> rs = new ArrayList<>();
         switch (entity) {
+            case "location":
+                file = new File(pathLocation);
+                break;
             case "person":
                 file = new File(pathPerson);
                 break;

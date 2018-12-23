@@ -13,12 +13,16 @@ public class GeneratePerson extends Generator {
 
     @Override
     protected String labelGen() {
-        return Main.personLabels.get(new Random().nextInt(Main.personLabels.size()));
+        int index = new Random().nextInt(Main.personLabels.size());
+        String s = Main.personLabels.get(index);
+        Main.personLabels.remove(index);
+        return s;
     }
 
     @Override
     public Person generator() {
         Person ps = new Person(labelGen(), descriptionGen(), "www.google.com.vn", Calendar.getInstance().getTime().toString());
+        ps.setAge(new Random().nextInt(100));
         return ps;
     }
 
@@ -27,27 +31,27 @@ public class GeneratePerson extends Generator {
         return Main.personDes.get(new java.util.Random().nextInt(Main.personDes.size()));
     }
 
-    public ArrayList<Entity> getListRandom() {
-        Person ps;
-        ArrayList<Entity> rs = new ArrayList<>();
-        for (int i = 0; i < 2000000; i++) {
-            ps = generator();
-            rs.add(ps);
-        }
-        return rs;
-    }
-
-    public static void main(String[] args) throws IOException {
-        new Main();
-//        Person ps = new GeneratePerson().generator();
-        long x = System.currentTimeMillis();
-        ArrayList<Entity> aps = new GeneratePerson().getListRandom();
-        long x2 = System.currentTimeMillis();
-//        System.out.println(ps.toString());
-        aps.forEach(i -> {
-            System.out.println(i.toString());
-        });
-        System.out.println(x2 - x);
-    }
+//    public ArrayList<Entity> getListRandom() {
+//        Person ps;
+//        ArrayList<Entity> rs = new ArrayList<>();
+//        for (int i = 0; i < 20; i++) {
+//            ps = generator();
+//            rs.add(ps);
+//        }
+//        return rs;
+//    }
+//
+//    public static void main(String[] args) throws IOException {
+//        new Main();
+////        Person ps = new GeneratePerson().generator();
+//        long x = System.currentTimeMillis();
+//        ArrayList<Entity> aps = new GeneratePerson().getListRandom();
+//        long x2 = System.currentTimeMillis();
+////        System.out.println(ps.toString());
+//        aps.forEach(i -> {
+//            System.out.println(i.toString());
+//        });
+//        System.out.println(x2 - x);
+//    }
 
 }

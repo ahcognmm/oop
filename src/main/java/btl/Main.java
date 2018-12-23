@@ -13,7 +13,7 @@ public class Main {
     public static ArrayList<String> orgLabels;
     public static ArrayList<String> relationships;
     public static ArrayList<String> eventLabels;
-    public static ArrayList<String> locations;
+    public static ArrayList<String> locationLabels;
     public static ArrayList<String> personDes;
     public static ArrayList<String> countryDes;
     public static ArrayList<String> orgDes;
@@ -25,7 +25,7 @@ public class Main {
     public Main() throws IOException {
 
         personLabels = FileHelper.getList("person");
-        locations = FileHelper.getList("person");
+        locationLabels = FileHelper.getList("location");
         eventLabels = FileHelper.getList("event");
         relationships = FileHelper.getList("relationship");
         orgLabels = FileHelper.getList("org");
@@ -36,7 +36,7 @@ public class Main {
         locationDes = FileHelper.getList("description_location");
         orgDes= FileHelper.getList("description_org");
 
-        entities.addAll(new GeneratePerson().getListRandom());
+//        entities.addAll(new GeneratePerson().getListRandom());
 //        entities.addAll(new GeneratePerson().getListRandom());
 //        entities.addAll(new GeneratePerson().getListRandom());
 //        entities.addAll(new GeneratePerson().getListRandom());

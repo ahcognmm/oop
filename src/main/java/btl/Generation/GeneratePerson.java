@@ -31,15 +31,15 @@ public class GeneratePerson extends Generator {
         return Main.personDes.get(new java.util.Random().nextInt(Main.personDes.size()));
     }
 
-//    public ArrayList<Entity> getListRandom() {
-//        Person ps;
-//        ArrayList<Entity> rs = new ArrayList<>();
-//        for (int i = 0; i < 20; i++) {
-//            ps = generator();
-//            rs.add(ps);
-//        }
-//        return rs;
-//    }
+    public ArrayList<Entity> getListRandom() {
+        Person ps;
+        ArrayList<Entity> rs = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            ps = generator();
+            rs.add(ps);
+        }
+        return rs;
+    }
 //
 //    public static void main(String[] args) throws IOException {
 //        new Main();

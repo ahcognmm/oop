@@ -22,6 +22,6 @@ public class GenerateCountry extends Generator {
 
     @Override
     public String descriptionGen() {
-        return Main.countryDes.get(Main.countryDes.size());
+        return Main.countryDes.get(new Random().nextInt(Main.countryDes.size() - 1));
     }
 }

@@ -11,7 +11,6 @@ public class FileHelper {
     private static String pathEvent = "eventLabel.txt";
     private static String pathRelationship = "relationshipDescription.txt";
     private static String pathLocation ="locationLabel.txt";
-    private static String pathUrl = "";
     private static String pathDescription_person = "personDescription.txt";
     private static String pathDescription_country = "countryDescription.txt";
     private static String pathDescription_org = "organizationDescription.txt";
@@ -40,9 +39,6 @@ public class FileHelper {
                 break;
             case "relationship":
                 file = new File(pathRelationship);
-                break;
-            case "url":
-                file = new File(pathUrl);
                 break;
             case "description_person":
                 file = new File(pathDescription_person);

@@ -18,7 +18,7 @@ public class GenerateRandom {
                 return new GenerateOrganization().generator();
             case 4:
                 return new GenerateEvent().generator();
-            case 5:
+            case 0:
                 return new GenerateLocation().generator();
             default:
                 return null;

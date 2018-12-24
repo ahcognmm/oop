@@ -23,6 +23,6 @@ public class GenerateEvent extends Generator {
 
     @Override
     public String descriptionGen() {
-        return super.descriptionGen();
+        return Main.eventDes.get(new Random().nextInt(Main.eventDes.size() - 1));
     }
 }

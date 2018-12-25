@@ -16,9 +16,8 @@ public class GenerateLocation extends Generator {
 
     @Override
     protected String labelGen() {
-        int index = new Random().nextInt(Main.locationLabels.size());
+        int index = new Random().nextInt(Main.locationLabels.size()-1);
         String s = Main.locationLabels.get(index);
-        Main.locationLabels.remove(index);
         return s;
     }
 

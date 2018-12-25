@@ -18,9 +18,9 @@ public class GenerateRelationship {
 
     public static String getRalationship(IRI en1, IRI en2) {
         if (en1.getNamespace().equals(Insertion.getPersonNamespace()) && en2.getNamespace().equals(Insertion.getPersonNamespace())) {
-            return ps.getRilationship(ps);
+            return ps.getRelationship(ps);
         } else if (en1.getNamespace().equals(Insertion.getPersonNamespace()) && en2.getNamespace().equals(Insertion.getCountryNamespace())) {
-            return ps.getRilationship(co);
+            return ps.getRelationship(co);
         } else
             return Main.relationships.get(new Random().nextInt(Main.relationships.size()));
     }

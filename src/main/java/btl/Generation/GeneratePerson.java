@@ -13,9 +13,8 @@ public class GeneratePerson extends Generator {
 
     @Override
     protected String labelGen() {
-        int index = new Random().nextInt(Main.personLabels.size());
+        int index = new Random().nextInt(Main.personLabels.size() - 1);
         String s = Main.personLabels.get(index);
-        Main.personLabels.remove(index);
         return s;
     }
 

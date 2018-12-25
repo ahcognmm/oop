@@ -11,10 +11,10 @@ public class Event extends Entity {
     }
 
     @Override
-    public String getRilationship(Object o) {
+    public String getRelationship(Object o) {
         if (o instanceof Location || o instanceof Country) {
-            return "####";
+            return "takes place";
         }
-        return super.getRilationship(o);
+        return super.getRelationship(o);
     }
 }

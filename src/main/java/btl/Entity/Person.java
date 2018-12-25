@@ -1,8 +1,14 @@
 package btl.Entity;
 
+import java.util.Random;
+
 public class Person extends Entity {
 
     private int age;
+    private String[] p_pRelation = {"visit", "depend on", "work with", "play with"};
+    private String[] p_cRelation = {"live", "leave", "arrive", "travel", "manage"};
+    private String[] p_orRelation = {"work at", "manage", "join", "establish"};
+    private String[] p_eRelation = {"join", "organize", "destroy", "cook"};
 
     public Person() {
     }
@@ -21,20 +27,23 @@ public class Person extends Entity {
     }
 
     @Override
-    public String getRilationship(Object o) {
+    public String getRelationship(Object o) {
         if (o instanceof Person) {
-            return "đến thăm";
+            return p_pRelation[new Random().nextInt(p_pRelation.length)];
         }
         if (o instanceof Organization) {
-            return "###";
+            return p_orRelation[new Random().nextInt(p_orRelation.length)];
         }
         if (o instanceof Country) {
-            return "####";
+            return p_cRelation[new Random().nextInt(p_cRelation.length)];
         }
         if (o instanceof Location) {
-            return "####";
+            return p_cRelation[new Random().nextInt(p_cRelation.length)];
         }
-        return super.getRilationship(o);
+        if (o instanceof Event) {
+            return p_eRelation[new Random().nextInt(p_eRelation.length)];
+        }
+        return super.getRelationship(o);
     }
 
 }

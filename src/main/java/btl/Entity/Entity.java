@@ -64,7 +64,7 @@ public class Entity {
         this.crawlTime = crawlTime;
     }
 
-    public String getRilationship(Object o) {
+    public String getRelationship(Object o) {
         return "";
     }
 

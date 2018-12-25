@@ -1,6 +1,9 @@
 package btl.Entity;
 
 public class Organization extends Entity {
+
+    private String[] relationship ={"establish","join","sponsor"};
+
     public Organization() {
     }
 
@@ -10,13 +13,13 @@ public class Organization extends Entity {
     }
 
     @Override
-    public String getRilationship(Object o) {
+    public String getRelationship(Object o) {
         if (o instanceof Country) {
-            return "####";
+            return "locate";
         }
-        if (o instanceof Event) {
-            return "####";
+        if (o instanceof Event){
+            return "establish";
         }
-        return super.getRilationship(o);
+        return super.getRelationship(o);
     }
 }

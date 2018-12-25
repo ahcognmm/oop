@@ -9,4 +9,9 @@ public class Country extends Entity {
         super(label, description, url, crawlTime);
         increaseNo();
     }
+
+    @Override
+    public String getRelationship(Object o) {
+        return super.getRelationship(o);
+    }
 }

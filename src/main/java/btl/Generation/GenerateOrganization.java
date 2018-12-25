@@ -18,7 +18,6 @@ public class GenerateOrganization extends Generator {
     protected String labelGen() {
         int index = new Random().nextInt(Main.orgLabels.size());
         String s = Main.orgLabels.get(index);
-        Main.orgLabels.remove(s);
         return s;
     }
 

@@ -2,7 +2,7 @@ package btl.Generation;
 
 import btl.Entity.Entity;
 import btl.Entity.Organization;
-import btl.Main;
+import btl.Application.Init;
 
 import java.io.IOException;
 import java.util.Calendar;
@@ -16,18 +16,18 @@ public class GenerateOrganization extends Generator {
 
     @Override
     protected String labelGen() {
-        int index = new Random().nextInt(Main.orgLabels.size());
-        String s = Main.orgLabels.get(index);
+        int index = new Random().nextInt(Init.orgLabels.size());
+        String s = Init.orgLabels.get(index);
         return s;
     }
 
     @Override
     public String descriptionGen() {
-        return Main.orgDes.get(new Random().nextInt(Main.orgDes.size()));
+        return Init.orgDes.get(new Random().nextInt(Init.orgDes.size()));
     }
 
     public static void main(String[] args) throws IOException {
-        new Main();
+        new Init();
         System.out.println(new GenerateOrganization().generator().toString());
     }
 }

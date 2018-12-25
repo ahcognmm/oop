@@ -2,7 +2,7 @@ package btl.Generation;
 
 import btl.Connection.Insertion;
 import btl.Entity.*;
-import btl.Main;
+import btl.Application.Init;
 import org.eclipse.rdf4j.model.IRI;
 
 import java.util.Random;
@@ -22,7 +22,7 @@ public class GenerateRelationship {
         } else if (en1.getNamespace().equals(Insertion.getPersonNamespace()) && en2.getNamespace().equals(Insertion.getCountryNamespace())) {
             return ps.getRelationship(co);
         } else
-            return Main.relationships.get(new Random().nextInt(Main.relationships.size()));
+            return Init.relationships.get(new Random().nextInt(Init.relationships.size()));
     }
 
 }

@@ -2,7 +2,7 @@ package btl.Generation;
 
 import btl.Entity.Entity;
 import btl.Entity.Location;
-import btl.Main;
+import btl.Application.Init;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -16,13 +16,13 @@ public class GenerateLocation extends Generator {
 
     @Override
     protected String labelGen() {
-        int index = new Random().nextInt(Main.locationLabels.size()-1);
-        String s = Main.locationLabels.get(index);
+        int index = new Random().nextInt(Init.locationLabels.size()-1);
+        String s = Init.locationLabels.get(index);
         return s;
     }
 
     @Override
     public String descriptionGen() {
-        return Main.locationDes.get(new Random().nextInt(Main.locationDes.size()));
+        return Init.locationDes.get(new Random().nextInt(Init.locationDes.size()));
     }
 }

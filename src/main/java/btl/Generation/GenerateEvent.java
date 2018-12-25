@@ -2,7 +2,7 @@ package btl.Generation;
 
 import btl.Entity.Entity;
 import btl.Entity.Event;
-import btl.Main;
+import btl.Application.Init;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -15,14 +15,14 @@ public class GenerateEvent extends Generator {
 
     @Override
     protected String labelGen() {
-        int index = new Random().nextInt(Main.eventLabels.size());
-        String s = Main.eventLabels.get(index);
-        Main.eventLabels.remove(index);
+        int index = new Random().nextInt(Init.eventLabels.size());
+        String s = Init.eventLabels.get(index);
+        Init.eventLabels.remove(index);
         return s;
     }
 
     @Override
     public String descriptionGen() {
-        return Main.eventDes.get(new Random().nextInt(Main.eventDes.size() - 1));
+        return Init.eventDes.get(new Random().nextInt(Init.eventDes.size() - 1));
     }
 }

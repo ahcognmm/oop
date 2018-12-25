@@ -2,9 +2,8 @@ package btl.Generation;
 
 import btl.Entity.Entity;
 import btl.Entity.Person;
-import btl.Main;
+import btl.Application.Init;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Random;
@@ -13,8 +12,8 @@ public class GeneratePerson extends Generator {
 
     @Override
     protected String labelGen() {
-        int index = new Random().nextInt(Main.personLabels.size() - 1);
-        String s = Main.personLabels.get(index);
+        int index = new Random().nextInt(Init.personLabels.size() - 1);
+        String s = Init.personLabels.get(index);
         return s;
     }
 
@@ -27,7 +26,7 @@ public class GeneratePerson extends Generator {
 
     @Override
     public String descriptionGen() {
-        return Main.personDes.get(new java.util.Random().nextInt(Main.personDes.size()));
+        return Init.personDes.get(new java.util.Random().nextInt(Init.personDes.size()));
     }
 
     public ArrayList<Entity> getListRandom() {
@@ -41,7 +40,7 @@ public class GeneratePerson extends Generator {
     }
 //
 //    public static void main(String[] args) throws IOException {
-//        new Main();
+//        new Init();
 ////        Person ps = new GeneratePerson().generator();
 //        long x = System.currentTimeMillis();
 //        ArrayList<Entity> aps = new GeneratePerson().getListRandom();

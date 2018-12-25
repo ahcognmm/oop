@@ -1,8 +1,8 @@
-package btl.Connection;
+package btl.Application;
 
+import btl.Connection.Insertion;
 import btl.Entity.Entity;
 import btl.Generation.GenerateRandom;
-import btl.Main;
 import com.franz.agraph.repository.AGCatalog;
 import com.franz.agraph.repository.AGRepository;
 import com.franz.agraph.repository.AGServer;
@@ -34,17 +34,17 @@ public class App {
 //            listEntity.add(insertion.add(t1.get(i)));
 //        }
 //        insertion.insertDatabase();
-//        InsertionThread thread1 = new InsertionThread(Main.relationships.subList(0,99),listEntity,myRepository);
+//        InsertionThread thread1 = new InsertionThread(Init.relationships.subList(0,99),listEntity,myRepository);
 //        thread1.start();
 //        thread1.join();
-//        InsertionThread thread2 =new InsertionThread(Main.relationships.subList(100,199),listEntity,myRepository);
+//        InsertionThread thread2 =new InsertionThread(Init.relationships.subList(100,199),listEntity,myRepository);
 //        thread2.start();
 //        thread2.join();
-//        new InsertionThread(Main.relationships.subList(0,100),listEntity,myRepository).start();
+//        new InsertionThread(Init.relationships.subList(0,100),listEntity,myRepository).start();
     }
 
     public static void main(String[] args) throws Exception {
-        new Main();
+        new Init();
         GenerateRandom random = new GenerateRandom();
 
         List<Entity> entities = random.listRandomEntity(1000000);

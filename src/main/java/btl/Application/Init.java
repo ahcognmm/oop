@@ -1,4 +1,4 @@
-package btl;
+package btl.Application;
 
 import btl.Entity.Entity;
 import btl.Generation.FileHelper;
@@ -7,7 +7,7 @@ import btl.Generation.GeneratePerson;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main {
+public class Init {
     public static ArrayList<String> personLabels;
     public static ArrayList<String> countryLabels;
     public static ArrayList<String> orgLabels;
@@ -22,7 +22,7 @@ public class Main {
 
     public static ArrayList<Entity> entities = new ArrayList<>();
 
-    public Main() throws IOException {
+    public Init() throws IOException {
 
         personLabels = FileHelper.getList("person");
         locationLabels = FileHelper.getList("location");

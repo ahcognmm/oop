@@ -2,7 +2,7 @@ package btl.Generation;
 
 import btl.Entity.Country;
 import btl.Entity.Entity;
-import btl.Main;
+import btl.Application.Init;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -15,13 +15,13 @@ public class GenerateCountry extends Generator {
 
     @Override
     protected String labelGen() {
-        int index = new Random().nextInt(Main.countryLabels.size());
-        String s = Main.countryLabels.get(index);
+        int index = new Random().nextInt(Init.countryLabels.size());
+        String s = Init.countryLabels.get(index);
         return s;
     }
 
     @Override
     public String descriptionGen() {
-        return Main.countryDes.get(new Random().nextInt(Main.countryDes.size() - 1));
+        return Init.countryDes.get(new Random().nextInt(Init.countryDes.size() - 1));
     }
 }

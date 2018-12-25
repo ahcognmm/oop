@@ -20,7 +20,6 @@ public class Insertion {
     private static String organizationNamespace = "http://www.aaa.com/organization/";
     private static String locationNamespace = "http://www.aaa.com/location/";
     private static String countryNamespace = "http://www.aaa.com/country/";
-    private static String timeNamespace = "http://www.aaa.com/time/";
     private static String eventNamespace = "http://www.aaa.com/event/";
     private static String relationshipNamespace = "http://www.aaa.com/relationship/";
 
@@ -38,6 +37,31 @@ public class Insertion {
 
     private Literal label;
     private Literal description;
+
+    public AGRepositoryConnection getConnection() {
+        return connection;
+    }
+
+    public static String getPersonNamespace() {
+        return personNamespace;
+    }
+
+    public static String getOrganizationNamespace() {
+        return organizationNamespace;
+    }
+
+    public static String getLocationNamespace() {
+        return locationNamespace;
+    }
+
+    public static String getCountryNamespace() {
+        return countryNamespace;
+    }
+
+    public static String getEventNamespace() {
+        return eventNamespace;
+    }
+
     private Literal extractedLink;
     private Literal extractedDate;
     private Literal age;

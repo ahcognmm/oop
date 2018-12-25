@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class TutorialExamples {
+public class App {
 
     private static final String SERVER_URL = "http://127.0.0.1:10035/";
     private static final String USERNAME = "ahcogn";
@@ -41,12 +41,13 @@ public class TutorialExamples {
         for (int i = 0; i < 100; i++) {
             listEntity.add(insertion.add(t1.get(i)));
         }
-        int size = listEntity.size();
-        Main.relationships.subList(0, 199).forEach(i -> {
-            IRI relationship = insertion.createRelationship(i);
-            insertion.insertRelationship(listEntity.get(new Random().nextInt(size)), relationship, listEntity.get(new Random().nextInt(size)));
-        });
-        insertion.insertDatabase();
+//        InsertionThread thread1 = new InsertionThread(Main.relationships.subList(0,99),listEntity,myRepository);
+//        thread1.start();
+//        thread1.join();
+//        InsertionThread thread2 =new InsertionThread(Main.relationships.subList(100,199),listEntity,myRepository);
+//        thread2.start();
+//        thread2.join();
+//        new InsertionThread(Main.relationships.subList(0,100),listEntity,myRepository).start();
     }
 
     public static void main(String[] args) throws Exception {

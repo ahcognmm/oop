@@ -1,4 +1,4 @@
-package btl.Connection;
+package btl.Insertion;
 
 import btl.Generation.GenerateRelationship;
 import com.franz.agraph.repository.AGRepository;

@@ -1,6 +1,6 @@
 package btl.Generation;
 
-import btl.Connection.Insertion;
+import btl.Insertion.Insertion;
 import btl.Entity.*;
 import btl.Application.Init;
 import org.eclipse.rdf4j.model.IRI;

@@ -1,7 +1,7 @@
 package btl.Application;
 
-import btl.Connection.Insertion;
-import btl.Connection.InsertionThread;
+import btl.Insertion.Insertion;
+import btl.Insertion.InsertionThread;
 import btl.Entity.Entity;
 import btl.Generation.GenerateRandom;
 import com.franz.agraph.repository.AGCatalog;

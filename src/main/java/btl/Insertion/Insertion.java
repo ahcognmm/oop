@@ -1,4 +1,4 @@
-package btl.Connection;
+package btl.Insertion;
 
 import btl.Entity.*;
 import com.franz.agraph.repository.AGRepositoryConnection;
@@ -7,8 +7,6 @@ import org.eclipse.rdf4j.model.Literal;
 import org.eclipse.rdf4j.model.ValueFactory;
 import org.eclipse.rdf4j.model.util.ModelBuilder;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
-
-import java.util.Random;
 
 public class Insertion {
     private AGRepositoryConnection connection;

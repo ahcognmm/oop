@@ -10,6 +10,7 @@ import com.franz.agraph.repository.AGServer;
 import org.eclipse.rdf4j.model.IRI;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class App {
@@ -34,6 +35,7 @@ public class App {
         ArrayList<InsertionThread> insertionThreads = new ArrayList<>();
 
         while (numOfEntity > 0) {
+//            int
             List<IRI> entities_iri = new ArrayList<>();
             GenerateRandom random = new GenerateRandom();
             List<Entity> entities = random.listRandomEntity(numOfEntity > 100 ? 100 : numOfEntity);
@@ -41,22 +43,16 @@ public class App {
                 entities_iri.add(insertion.add(i));
             });
             insertion.insertDatabase();
-            while (numOfRelation > 20) {
-                InsertionThread thread = new InsertionThread(numOfRelation > 20 ? 20 : numOfRelation, entities_iri, myRepository);
+            while (numOfRelation > 100) {
+                InsertionThread thread = new InsertionThread(numOfRelation > 100 ? 100 : numOfRelation, entities_iri, myRepository, insertionThreads.size() + 1);
                 insertionThreads.add(thread);
+                thread.start();
+                thread.join();
                 numOfRelation -= 20;
             }
             numOfEntity -= 100;
         }
-
-        insertionThreads.forEach(i->{
-            i.start();
-            try {
-                i.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
+        System.out.println(insertionThreads.size());
 //        for (int i = 0; i < t1.size(); i++) {
 //            listEntity.add(insertion.add(t1.get(i)));
 //        }
@@ -72,11 +68,12 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         new Init();
+        System.out.println(Calendar.getInstance().getTime().toString());
 //        GenerateRandom random = new GenerateRandom();
 //
 //        List<Entity> entities = random.listRandomEntity(1000000);
 //        System.out.println(ps.toString());
 //        run(false, entities);
-        run(false, 1000000, 2000000);
+        run(false, 200000, 600000);
     }
 }

@@ -5,6 +5,7 @@ import com.franz.agraph.repository.AGRepository;
 import com.franz.agraph.repository.AGRepositoryConnection;
 import org.eclipse.rdf4j.model.IRI;
 
+import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
 
@@ -14,12 +15,14 @@ public class InsertionThread extends Thread {
     private List<IRI> listEntities;
     private AGRepositoryConnection connection;
     private Insertion insertion;
+    private int no;
 
-    public InsertionThread(int nuRelationship, List<IRI> listEntities, AGRepository connection) {
+    public InsertionThread(int nuRelationship, List<IRI> listEntities, AGRepository connection, int no) {
         this.connection = connection.getConnection();
         this.listEntities = listEntities;
         this.nuRelationship = nuRelationship;
         insertion = new Insertion(this.connection);
+        this.no = no;
 
     }
 
@@ -33,5 +36,6 @@ public class InsertionThread extends Thread {
             insertion.insertRelationship(entity1, relationship, entity2);
         }
         insertion.insertDatabase();
+        System.out.println("finish>>" + no + " " + Calendar.getInstance().getTime().toString());
     }
 }

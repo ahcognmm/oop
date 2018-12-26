@@ -1,4 +1,4 @@
-package btl.Query;
+package btl.query;
 
 import com.franz.agraph.repository.AGRepositoryConnection;
 import com.franz.agraph.repository.AGTupleQuery;

@@ -1,4 +1,4 @@
-package btl.Entity;
+package btl.entity;
 
 public class Event extends Entity {
 

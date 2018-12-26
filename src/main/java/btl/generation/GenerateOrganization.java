@@ -1,8 +1,8 @@
-package btl.Generation;
+package btl.generation;
 
-import btl.Entity.Entity;
-import btl.Entity.Organization;
-import btl.Application.Init;
+import btl.entity.Entity;
+import btl.entity.Organization;
+import btl.application.Init;
 
 import java.io.IOException;
 import java.util.Calendar;

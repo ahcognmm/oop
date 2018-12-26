@@ -1,4 +1,4 @@
-package btl.Generation;
+package btl;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -16,6 +16,7 @@ public class FileHelper {
     private static String pathDescription_org = "organizationDescription.txt";
     private static String pathDescription_event = "eventDescription.txt";
     private static String pathDescription_location = "locationDescription.txt";
+    private static String query = "query.txt";
     private static File file;
     private static BufferedReader bufferedReader;
 
@@ -54,6 +55,9 @@ public class FileHelper {
                 break;
             case "description_org":
                 file = new File(pathDescription_org);
+                break;
+            case "query":
+                file = new File(query);
                 break;
             default:
                 break;

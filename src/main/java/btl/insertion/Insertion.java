@@ -1,6 +1,6 @@
-package btl.Insertion;
+package btl.insertion;
 
-import btl.Entity.*;
+import btl.entity.*;
 import com.franz.agraph.repository.AGRepositoryConnection;
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;

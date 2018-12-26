@@ -1,8 +1,7 @@
-package btl.Application;
+package btl.application;
 
-import btl.Entity.Entity;
-import btl.Generation.FileHelper;
-import btl.Generation.GeneratePerson;
+import btl.entity.Entity;
+import btl.FileHelper;
 
 import java.io.IOException;
 import java.util.ArrayList;

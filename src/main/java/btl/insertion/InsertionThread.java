@@ -1,11 +1,10 @@
-package btl.Insertion;
+package btl.insertion;
 
-import btl.Generation.GenerateRelationship;
+import btl.generation.GenerateRelationship;
 import com.franz.agraph.repository.AGRepository;
 import com.franz.agraph.repository.AGRepositoryConnection;
 import org.eclipse.rdf4j.model.IRI;
 
-import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
 
@@ -36,6 +35,5 @@ public class InsertionThread extends Thread {
             insertion.insertRelationship(entity1, relationship, entity2);
         }
         insertion.insertDatabase();
-        System.out.println("finish>>" + no + " " + Calendar.getInstance().getTime().toString());
     }
 }

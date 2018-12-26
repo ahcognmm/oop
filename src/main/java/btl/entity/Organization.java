@@ -1,4 +1,4 @@
-package btl.Entity;
+package btl.entity;
 
 public class Organization extends Entity {
 

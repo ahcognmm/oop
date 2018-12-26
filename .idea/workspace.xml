@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6efad862-1751-4c6b-b4f1-e8f77d15db48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Application/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/Application/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Application/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/application/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Application/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/application/Init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Entity/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/entity/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/entity/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/entity/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Entity/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/entity/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/FileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/GenerateCountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/GenerateEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/GenerateLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateOrganization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/GenerateOrganization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/GeneratePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/GeneratePerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/GenerateRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateRelationship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/GenerateRelationship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Generation/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/generation/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Insertion/Insertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/insertion/Insertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Insertion/InsertionThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/insertion/InsertionThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Query/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/query/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/btl/Query/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/btl/query/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/btl/Application/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/btl/Application/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/btl/Connection/Insertion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/btl/Connection/InsertionThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/btl/Generation/GenerateRelationship.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/btl/Generation/GenerateRelationship.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,7 +69,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="83" />
+          <entry key="java" value="84" />
           <entry key="txt" value="12" />
           <entry key="xml" value="2" />
         </counts>
@@ -52,7 +77,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="84" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="XML" value="2" />
         </counts>
@@ -60,13 +85,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="45" />
-          <entry key="java" value="8993" />
+          <entry key="java" value="9300" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8993" />
+          <entry key="JAVA" value="9300" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="XML" value="13" />
         </counts>
@@ -76,28 +101,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Application/App.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/application/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+            <state relative-caret-position="310">
+              <caret line="32" column="56" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1545798360075" expanded="true" signature="2650:2733" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Query/Query.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/query/Query.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="299">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/Generator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
               <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
@@ -109,55 +135,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/FileHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/FileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-899">
-              <caret line="12" selection-start-line="11" selection-start-column="75" selection-end-line="12" />
+            <state relative-caret-position="195">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GeneratePerson.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/query/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
-              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateOrganization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateCountry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Connection/Insertion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-991">
-              <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Application/Init.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="437">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,10 +156,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/btl/Connection/InsertionThread.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GeneratePerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
+            <state relative-caret-position="-462">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateOrganization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateCountry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/insertion/Insertion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/btl/insertion/InsertionThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,7 +254,6 @@
         <option value="$PROJECT_DIR$/src/main/java/btl/Generation/LocationGenerate.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateTriple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/btl/Generation/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateCountry.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Generation/GenerateRandom.java" />
@@ -248,7 +273,11 @@
         <option value="$PROJECT_DIR$/src/main/java/btl/Connection/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Connection/Insertion.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Connection/InsertionThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/btl/Insertion/InsertionThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/btl/Application/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/btl/Generation/FileHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/btl/Query/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/btl/query/test.java" />
       </list>
     </option>
   </component>
@@ -319,7 +348,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="btl" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OOP" type="b2602c69:ProjectViewProjectNode" />
@@ -328,34 +357,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="btl" type="462c0819:PsiDirectoryNode" />
-              <item name="Connection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OOP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="btl" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OOP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="btl" type="462c0819:PsiDirectoryNode" />
-              <item name="Generation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OOP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="btl" type="462c0819:PsiDirectoryNode" />
-              <item name="Query" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,12 +398,12 @@
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="btl.Application.App" />
+      <option name="MAIN_CLASS_NAME" value="btl.application.App" />
       <module name="OOP" />
       <option name="VM_PARAMETERS" value="-Xmx1G" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="btl.Application.*" />
+          <option name="PATTERN" value="btl.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -410,11 +412,11 @@
       </method>
     </configuration>
     <configuration name="GenerateOrganization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="btl.Generation.GenerateOrganization" />
+      <option name="MAIN_CLASS_NAME" value="btl.generation.GenerateOrganization" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="btl.Generation.*" />
+          <option name="PATTERN" value="btl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -423,11 +425,11 @@
       </method>
     </configuration>
     <configuration name="GeneratePerson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="btl.Generation.GeneratePerson" />
+      <option name="MAIN_CLASS_NAME" value="btl.generation.GeneratePerson" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="btl.Generation.*" />
+          <option name="PATTERN" value="btl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -457,11 +459,11 @@
       </method>
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="btl.Query.test" />
+      <option name="MAIN_CLASS_NAME" value="btl.query.test" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="btl.Application.*" />
+          <option name="PATTERN" value="btl.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -518,12 +520,12 @@
       <workItem from="1545705999145" duration="7917000" />
       <workItem from="1545728468948" duration="79000" />
       <workItem from="1545742870013" duration="1621000" />
-      <workItem from="1545789391949" duration="7020000" />
+      <workItem from="1545789391949" duration="8589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75283000" />
+    <option name="totallyTimeSpent" value="76852000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,7 +537,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61171365" visible="true" weight="0.2232687" />
@@ -619,14 +621,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateRandom.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateRandom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
@@ -636,28 +638,28 @@
     <entry file="file://$PROJECT_DIR$/relationshipDescription.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateRelationship.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateRelationship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Entity/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/entity/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Entity/Country.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/entity/Country.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateLocation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
@@ -667,42 +669,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Entity/Organization.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/entity/Organization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Entity/Location.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/entity/Location.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Entity/Event.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/entity/Event.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Entity/Entity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/entity/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
           <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Query/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Application/Init.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/application/Init.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -712,28 +707,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Connection/Insertion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-991">
-          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/FileHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-899">
-          <caret line="12" selection-start-line="11" selection-start-column="75" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateCountry.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateCountry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/Generator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
@@ -743,44 +724,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GeneratePerson.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GeneratePerson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462">
           <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Generation/GenerateOrganization.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/generation/GenerateOrganization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Connection/InsertionThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/insertion/Insertion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
+        <state relative-caret-position="184">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/insertion/InsertionThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Application/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/application/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        <state relative-caret-position="310">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1545798360075" expanded="true" signature="2650:2733" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/btl/Query/Query.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/query/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="299">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/btl/query/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

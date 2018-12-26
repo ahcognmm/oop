@@ -1,16 +1,15 @@
-package btl.Application;
+package btl.application;
 
-import btl.Insertion.Insertion;
-import btl.Insertion.InsertionThread;
-import btl.Entity.Entity;
-import btl.Generation.GenerateRandom;
+import btl.insertion.Insertion;
+import btl.insertion.InsertionThread;
+import btl.entity.Entity;
+import btl.generation.GenerateRandom;
 import com.franz.agraph.repository.AGCatalog;
 import com.franz.agraph.repository.AGRepository;
 import com.franz.agraph.repository.AGServer;
 import org.eclipse.rdf4j.model.IRI;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class App {
@@ -48,24 +47,27 @@ public class App {
                 insertionThreads.add(thread);
                 thread.start();
                 thread.join();
-                numOfRelation -= 20;
+                numOfRelation -= 1000;
             }
             numOfEntity -= 100;
         }
         System.out.println(insertionThreads.size());
+        server.close();
     }
 
     public static void main(String[] args) throws Exception {
         new Init();
-        System.out.println(Calendar.getInstance().getTime().toString());
-//        GenerateRandom random = new GenerateRandom();
-//
-//        List<Entity> entities = random.listRandomEntity(1000000);
-//        System.out.println(ps.toString());
-//        run(false, entities);
-        run(false, 100, 200, "oop_f1");
-        run(false, 5000, 7000, "oop_f2");
-        run(false, 60000, 80000, "oop_f3");
-        run(false, 300000, 400000, "oop_f4");
+//        System.out.println(Calendar.getInstance().getTime().toString());
+//        run(false, 100, 200, "oop_f1");
+//        System.out.println("finish r1");
+//        run(false, 5000, 7000, "oop_f2");
+//        System.out.println("finish r2");
+//        run(false, 60000, 80000, "oop_f3");
+//        System.out.println("finish r3");
+        run(false, 300000, 400000, "oop_f");
+        System.out.println("finish r4");
+//        run(false, 600000, 1200000, "oop_f4");
+//        System.out.println("finish r5");
+
     }
 }

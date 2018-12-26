@@ -1,7 +1,6 @@
-package btl.Generation;
+package btl.generation;
 
-import btl.Entity.Entity;
-import com.sun.istack.internal.Nullable;
+import btl.entity.Entity;
 
 import java.util.ArrayList;
 import java.util.List;

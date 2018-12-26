@@ -1,6 +1,6 @@
-package btl.Generation;
+package btl.generation;
 
-import btl.Entity.Entity;
+import btl.entity.Entity;
 
 public abstract class Generator {
 

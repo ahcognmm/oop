@@ -1,8 +1,8 @@
-package btl.Generation;
+package btl.generation;
 
-import btl.Insertion.Insertion;
-import btl.Entity.*;
-import btl.Application.Init;
+import btl.insertion.Insertion;
+import btl.entity.*;
+import btl.application.Init;
 import org.eclipse.rdf4j.model.IRI;
 
 import java.util.Random;

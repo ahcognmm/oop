@@ -1,8 +1,8 @@
-package btl.Generation;
+package btl.generation;
 
-import btl.Entity.Country;
-import btl.Entity.Entity;
-import btl.Application.Init;
+import btl.entity.Country;
+import btl.entity.Entity;
+import btl.application.Init;
 
 import java.util.Calendar;
 import java.util.Random;

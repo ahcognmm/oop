@@ -1,8 +1,8 @@
-package btl.Generation;
+package btl.generation;
 
-import btl.Entity.Entity;
-import btl.Entity.Person;
-import btl.Application.Init;
+import btl.entity.Entity;
+import btl.entity.Person;
+import btl.application.Init;
 
 import java.util.ArrayList;
 import java.util.Calendar;

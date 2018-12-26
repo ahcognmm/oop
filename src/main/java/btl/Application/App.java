@@ -22,14 +22,14 @@ public class App {
     /**
      * Creating a Repository
      */
-    public static void run(boolean close, int numOfEntity, int numOfRelation) throws Exception {
+    public static void run(boolean close, int numOfEntity, int numOfRelation, String name) throws Exception {
 
         System.out.println("\nStarting run().");
         AGServer server = new AGServer(SERVER_URL, USERNAME, PASSWORD);
         AGCatalog catalog = server.getRootCatalog();
         System.out.println(catalog.getRepositoriesURL());
-        catalog.deleteRepository("oopn");
-        AGRepository myRepository = catalog.createRepository("oopn");
+        catalog.deleteRepository(name);
+        AGRepository myRepository = catalog.createRepository(name);
 
         Insertion insertion = new Insertion(myRepository.getConnection());
         ArrayList<InsertionThread> insertionThreads = new ArrayList<>();
@@ -44,7 +44,7 @@ public class App {
             });
             insertion.insertDatabase();
             while (numOfRelation > 100) {
-                InsertionThread thread = new InsertionThread(numOfRelation > 100 ? 100 : numOfRelation, entities_iri, myRepository, insertionThreads.size() + 1);
+                InsertionThread thread = new InsertionThread(numOfRelation > 1000 ? 1000 : numOfRelation, entities_iri, myRepository, insertionThreads.size() + 1);
                 insertionThreads.add(thread);
                 thread.start();
                 thread.join();
@@ -53,17 +53,6 @@ public class App {
             numOfEntity -= 100;
         }
         System.out.println(insertionThreads.size());
-//        for (int i = 0; i < t1.size(); i++) {
-//            listEntity.add(insertion.add(t1.get(i)));
-//        }
-//        insertion.insertDatabase();
-//        InsertionThread thread1 = new InsertionThread(Init.relationships.subList(0,99),listEntity,myRepository);
-//        thread1.start();
-//        thread1.join();
-//        InsertionThread thread2 =new InsertionThread(Init.relationships.subList(100,199),listEntity,myRepository);
-//        thread2.start();
-//        thread2.join();
-//        new InsertionThread(Init.relationships.subList(0,100),listEntity,myRepository).start();
     }
 
     public static void main(String[] args) throws Exception {
@@ -74,6 +63,9 @@ public class App {
 //        List<Entity> entities = random.listRandomEntity(1000000);
 //        System.out.println(ps.toString());
 //        run(false, entities);
-        run(false, 200000, 600000);
+        run(false, 100, 200, "oop_f1");
+        run(false, 5000, 7000, "oop_f2");
+        run(false, 60000, 80000, "oop_f3");
+        run(false, 300000, 400000, "oop_f4");
     }
 }

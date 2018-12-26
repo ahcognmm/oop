@@ -1,6 +1,7 @@
 package btl.Application;
 
 import btl.Connection.Insertion;
+import btl.Connection.InsertionThread;
 import btl.Entity.Entity;
 import btl.Generation.GenerateRandom;
 import com.franz.agraph.repository.AGCatalog;
@@ -20,16 +21,42 @@ public class App {
     /**
      * Creating a Repository
      */
-    public static void run(boolean close, List<Entity> t1) throws Exception {
+    public static void run(boolean close, int numOfEntity, int numOfRelation) throws Exception {
 
         System.out.println("\nStarting run().");
         AGServer server = new AGServer(SERVER_URL, USERNAME, PASSWORD);
         AGCatalog catalog = server.getRootCatalog();
-        catalog.deleteRepository("oop");
-        AGRepository myRepository = catalog.createRepository("oop");
+        System.out.println(catalog.getRepositoriesURL());
+        catalog.deleteRepository("oopn");
+        AGRepository myRepository = catalog.createRepository("oopn");
 
         Insertion insertion = new Insertion(myRepository.getConnection());
-        ArrayList<IRI> listEntity = new ArrayList<>();
+        ArrayList<InsertionThread> insertionThreads = new ArrayList<>();
+
+        while (numOfEntity > 0) {
+            List<IRI> entities_iri = new ArrayList<>();
+            GenerateRandom random = new GenerateRandom();
+            List<Entity> entities = random.listRandomEntity(numOfEntity > 100 ? 100 : numOfEntity);
+            entities.forEach(i -> {
+                entities_iri.add(insertion.add(i));
+            });
+            insertion.insertDatabase();
+            while (numOfRelation > 20) {
+                InsertionThread thread = new InsertionThread(numOfRelation > 20 ? 20 : numOfRelation, entities_iri, myRepository);
+                insertionThreads.add(thread);
+                numOfRelation -= 20;
+            }
+            numOfEntity -= 100;
+        }
+
+        insertionThreads.forEach(i->{
+            i.start();
+            try {
+                i.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
 //        for (int i = 0; i < t1.size(); i++) {
 //            listEntity.add(insertion.add(t1.get(i)));
 //        }
@@ -45,10 +72,11 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         new Init();
-        GenerateRandom random = new GenerateRandom();
-
-        List<Entity> entities = random.listRandomEntity(1000000);
+//        GenerateRandom random = new GenerateRandom();
+//
+//        List<Entity> entities = random.listRandomEntity(1000000);
 //        System.out.println(ps.toString());
-        run(false, entities);
+//        run(false, entities);
+        run(false, 1000000, 2000000);
     }
 }

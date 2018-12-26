@@ -14,7 +14,7 @@ public class Insertion {
     private AGRepositoryConnection connection;
     private ValueFactory valueFactory;
 
-    private static String ontologyNamespace = "http://www.aaa.com/ontology/";
+    private static String ontologyNamespace = "http://www.aaa.com/aa/";
 
     private static String personNamespace = "http://www.aaa.com/person/";
     private static String organizationNamespace = "http://www.aaa.com/organization/";

@@ -1,4 +1,4 @@
-package btl;
+package btl.Query;
 
 import btl.Entity.Person;
 
